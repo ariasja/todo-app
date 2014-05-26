@@ -26,6 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    blankslate (3.1.2)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -37,6 +38,7 @@ GEM
     commonjs (0.2.7)
     erubis (2.7.0)
     execjs (2.0.2)
+    ffi (1.0.11)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -61,6 +63,8 @@ GEM
     polyglot (0.3.4)
     protected_attributes (1.0.7)
       activemodel (>= 4.0.1, < 5.0)
+    pygments.rb (0.2.13)
+      rubypython (~> 0.5.3)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -80,7 +84,11 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    redcarpet (3.1.2)
     ref (1.0.5)
+    rubypython (0.5.3)
+      blankslate (>= 2.1.2.3)
+      ffi (~> 1.0.7)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -133,7 +141,9 @@ DEPENDENCIES
   jquery-rails
   less-rails
   protected_attributes
+  pygments.rb (~> 0.2.12)
   rails (= 4.0.5)
+  redcarpet
   sass-rails (~> 4.0.2)
   sdoc
   simple_form
