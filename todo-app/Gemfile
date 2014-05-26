@@ -32,9 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-  gem "therubyracer"
-  gem "less-rails"
+  gem 'therubyracer'
+  gem 'less-rails'
   gem 'twitter-bootstrap-rails'
+  gem 'protected_attributes'
+  gem 'simple_form'
 
 
 # Use ActiveModel has_secure_password

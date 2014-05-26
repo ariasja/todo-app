@@ -1,16 +1,6 @@
-<%= form_for @todo, :html => { :class => 'form-horizontal' } do |f| %>
-  <div class="control-group">
-    <%= f.label :item, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :item, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :completed_at, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :completed_at, :class => 'text_field' %>
-    </div>
-  </div>
+<%= simple_form_for @todo, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :item %>
+  <%= f.input :completed_at %>
 
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
